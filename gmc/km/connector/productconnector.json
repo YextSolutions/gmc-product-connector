@@ -9,8 +9,8 @@
         "source": "gmc",
         "operation": "fetchProducts",
         "inputs": {
-          "googleLinkedAccount": "google.test",
-          "merchantId": "704634941"
+          "googleLinkedAccount": "${{googleLinkedAccount}}",
+          "merchantId": "${{merchantId}}"
         }
       }
     },
