@@ -14,7 +14,7 @@
         }
       }
     },
-    "selectors": [
+       "selectors": [
       {
         "type": "JSON",
         "header": "Entity ID",
@@ -655,90 +655,25 @@
   ],
   "mappings": [
     {
-      "field": "price",
-      "header": "Price (Value)",
-      "subfieldPath": [
-        {
-          "name": "value"
-        }
-      ]
-    },
-    {
-      "field": "gmc_overrideTax",
-      "header": "Tax Country",
-      "subfieldPath": [
-        {
-          "name": "taxCountry"
-        }
-      ]
-    },
-    {
-      "field": "gmc_shoppingAdsLabels",
-      "header": "Custom Labels",
-      "subfieldPath": []
-    },
-    {
+      "clearValueIfBlank": false,
       "field": "mpn",
       "header": "MPN",
       "subfieldPath": []
     },
     {
-      "field": "gmc_shippingOverride",
-      "header": "Shipping Min Transit Time",
-      "subfieldPath": [
-        {
-          "name": "minimumTransitTime"
-        }
-      ]
-    },
-    {
-      "field": "shippingWeight",
-      "header": "Shipping Weight (Value)",
-      "subfieldPath": [
-        {
-          "name": "value"
-        }
-      ]
-    },
-    {
+      "clearValueIfBlank": false,
       "field": "maximumEnergyEfficiencyClass",
       "header": "Maximum Energy Efficiency Class",
       "subfieldPath": []
     },
     {
-      "field": "name",
-      "header": "Name",
-      "subfieldPath": []
-    },
-    {
-      "field": "installmentPlan",
-      "header": "Installment Plan (Number of Periods)",
-      "subfieldPath": [
-        {
-          "name": "numberOfPeriods"
-        }
-      ]
-    },
-    {
-      "field": "includesAdultContent",
-      "header": "Adult Content",
-      "subfieldPath": []
-    },
-    {
-      "field": "unitPricingBaseMeasure",
-      "header": "Unit Pricing Base Measure (Value)",
-      "subfieldPath": [
-        {
-          "name": "value"
-        }
-      ]
-    },
-    {
+      "clearValueIfBlank": false,
       "field": "entityId",
       "header": "Entity ID",
       "subfieldPath": []
     },
     {
+      "clearValueIfBlank": false,
       "field": "gmc_shippingOverride",
       "header": "Shipping Max Transit Time",
       "subfieldPath": [
@@ -748,37 +683,7 @@
       ]
     },
     {
-      "field": "primaryPhoto",
-      "header": "Image Link",
-      "subfieldPath": [
-        {
-          "name": "image"
-        },
-        {
-          "name": "url"
-        }
-      ]
-    },
-    {
-      "field": "loyaltyPoints",
-      "header": "Loyalty Points (Value)",
-      "subfieldPath": [
-        {
-          "name": "numberOfPoints"
-        }
-      ]
-    },
-    {
-      "field": "gmc_adsRedirectURL",
-      "header": "Ads Redirect URL",
-      "subfieldPath": []
-    },
-    {
-      "field": "gmc_shippingLabel",
-      "header": "Shipping Label",
-      "subfieldPath": []
-    },
-    {
+      "clearValueIfBlank": false,
       "field": "installmentPlan",
       "header": "Installment Plan (Currency)",
       "subfieldPath": [
@@ -791,6 +696,7 @@
       ]
     },
     {
+      "clearValueIfBlank": false,
       "field": "shippingWidth",
       "header": "Shipping Width (Value)",
       "subfieldPath": [
@@ -800,20 +706,7 @@
       ]
     },
     {
-      "field": "gmc_shippingOverride",
-      "header": "Shipping Max Handling Time",
-      "subfieldPath": [
-        {
-          "name": "maximumHandlingTime"
-        }
-      ]
-    },
-    {
-      "field": "color",
-      "header": "Color ",
-      "subfieldPath": []
-    },
-    {
+      "clearValueIfBlank": false,
       "field": "unitPricingBaseMeasure",
       "header": "Unit Pricing Base Measure (Unit)",
       "subfieldPath": [
@@ -823,16 +716,7 @@
       ]
     },
     {
-      "field": "gmc_includedDestinations",
-      "header": "Included Destinations",
-      "subfieldPath": []
-    },
-    {
-      "field": "stockStatus",
-      "header": "Availability",
-      "subfieldPath": []
-    },
-    {
+      "clearValueIfBlank": false,
       "field": "gmc_overrideTax",
       "header": "Tax Postal Code",
       "subfieldPath": [
@@ -842,109 +726,31 @@
       ]
     },
     {
-      "field": "shippingHeight",
-      "header": "Shipping Height (Unit)",
-      "subfieldPath": [
-        {
-          "name": "unit"
-        }
-      ]
-    },
-    {
-      "field": "gmc_displayAds",
-      "header": "Display Ads Link",
-      "subfieldPath": [
-        {
-          "name": "displayAdsLink"
-        }
-      ]
-    },
-    {
-      "field": "gmc_channel",
-      "header": "Channel",
-      "subfieldPath": []
-    },
-    {
-      "field": "shippingLength",
-      "header": "Shipping Length (Unit)",
-      "subfieldPath": [
-        {
-          "name": "unit"
-        }
-      ]
-    },
-    {
+      "clearValueIfBlank": false,
       "field": "mobileOptimizedLandingPage",
       "header": "Mobile Link",
       "subfieldPath": []
     },
     {
-      "field": "gmc_displayAds",
-      "header": "Display Ads ID",
-      "subfieldPath": [
-        {
-          "name": "displayAdsID"
-        }
-      ]
-    },
-    {
-      "field": "gmc_pickupMethodOption",
-      "header": "Pickup Method",
-      "subfieldPath": []
-    },
-    {
+      "clearValueIfBlank": false,
       "field": "sizeSystem",
       "header": "Size System",
       "subfieldPath": []
     },
     {
+      "clearValueIfBlank": false,
       "field": "targetGender",
       "header": "Gender ",
       "subfieldPath": []
     },
     {
-      "field": "brand",
-      "header": "Brand",
-      "subfieldPath": []
-    },
-    {
-      "field": "productionCost",
-      "header": "Cost of Goods Sold (Currency)",
-      "subfieldPath": [
-        {
-          "name": "currencyCode"
-        }
-      ]
-    },
-    {
-      "field": "gmc_shippingOverride",
-      "header": "Shipping Postal Code",
-      "subfieldPath": [
-        {
-          "name": "postalCode"
-        }
-      ]
-    },
-    {
+      "clearValueIfBlank": false,
       "field": "gmc_transitTimeLabel",
       "header": "Transit Time Label",
       "subfieldPath": []
     },
     {
-      "field": "gmc_shippingOverride",
-      "header": "Shipping Service",
-      "subfieldPath": [
-        {
-          "name": "service"
-        }
-      ]
-    },
-    {
-      "field": "gmc_canonicalLink",
-      "header": "Canonical Link",
-      "subfieldPath": []
-    },
-    {
+      "clearValueIfBlank": false,
       "field": "loyaltyPoints",
       "header": "Loyalty Points (Ratio)",
       "subfieldPath": [
@@ -954,6 +760,7 @@
       ]
     },
     {
+      "clearValueIfBlank": false,
       "field": "gmc_shippingOverride",
       "header": "Shipping Min Handling Time",
       "subfieldPath": [
@@ -963,54 +770,37 @@
       ]
     },
     {
-      "field": "gmc_displayAds",
-      "header": "Display Ads Similar IDs",
-      "subfieldPath": [
-        {
-          "name": "displayAdsSimilarIDs"
-        }
-      ]
-    },
-    {
+      "clearValueIfBlank": false,
       "field": "gmc_itemGroupID",
       "header": "Item Group ID",
       "subfieldPath": []
     },
     {
-      "field": "gmc_shoppingAdsExcludedCountries",
-      "header": "Shopping Ads Excluded Countries",
-      "subfieldPath": []
-    },
-    {
-      "field": "gmc_overrideTax",
-      "header": "Tax Rate",
-      "subfieldPath": [
-        {
-          "name": "taxRate"
-        }
-      ]
-    },
-    {
+      "clearValueIfBlank": false,
       "field": "productHighlights",
       "header": "Product Highlights",
       "subfieldPath": []
     },
     {
+      "clearValueIfBlank": false,
       "field": "numberOfItemsInPack",
       "header": "Multipack",
       "subfieldPath": []
     },
     {
+      "clearValueIfBlank": false,
       "field": "gmc_taxCategoryLabel",
       "header": "Tax Category Label",
       "subfieldPath": []
     },
     {
+      "clearValueIfBlank": false,
       "field": "gmc_additionalSizeType",
       "header": "Additional Size Type",
       "subfieldPath": []
     },
     {
+      "clearValueIfBlank": false,
       "field": "gmc_displayAds",
       "header": "Display Ads Title",
       "subfieldPath": [
@@ -1020,16 +810,19 @@
       ]
     },
     {
+      "clearValueIfBlank": false,
       "field": "landingPageUrl",
       "header": "Link",
       "subfieldPath": []
     },
     {
+      "clearValueIfBlank": false,
       "field": "gmc_excludedDestinations",
       "header": "Excluded Destinations",
       "subfieldPath": []
     },
     {
+      "clearValueIfBlank": false,
       "field": "installmentPlan",
       "header": "Installment Plan (Value)",
       "subfieldPath": [
@@ -1042,20 +835,7 @@
       ]
     },
     {
-      "field": "expirationDate",
-      "header": "Expiration Date",
-      "subfieldPath": []
-    },
-    {
-      "field": "gmc_shippingOverride",
-      "header": "Shipping Location ID",
-      "subfieldPath": [
-        {
-          "name": "locationID"
-        }
-      ]
-    },
-    {
+      "clearValueIfBlank": false,
       "field": "gmc_overrideTax",
       "header": "Tax Region",
       "subfieldPath": [
@@ -1065,11 +845,13 @@
       ]
     },
     {
+      "clearValueIfBlank": false,
       "field": "richTextDescription",
       "header": "Description",
       "subfieldPath": []
     },
     {
+      "clearValueIfBlank": false,
       "field": "gmc_shippingOverride",
       "header": "Shipping Location Group Name",
       "subfieldPath": [
@@ -1079,15 +861,7 @@
       ]
     },
     {
-      "field": "unitPricingMeasure",
-      "header": "Unit Pricing Measure (Value)",
-      "subfieldPath": [
-        {
-          "name": "value"
-        }
-      ]
-    },
-    {
+      "clearValueIfBlank": false,
       "field": "subscriptionPlan",
       "header": "Product Subscription Cost (Value)",
       "subfieldPath": [
@@ -1100,6 +874,7 @@
       ]
     },
     {
+      "clearValueIfBlank": false,
       "field": "productionCost",
       "header": "Cost of Goods Sold (Value)",
       "subfieldPath": [
@@ -1109,6 +884,7 @@
       ]
     },
     {
+      "clearValueIfBlank": false,
       "field": "shippingLength",
       "header": "Shipping Length (Value)",
       "subfieldPath": [
@@ -1118,6 +894,7 @@
       ]
     },
     {
+      "clearValueIfBlank": false,
       "field": "gmc_overrideTax",
       "header": "Tax Charged on Shipping",
       "subfieldPath": [
@@ -1127,34 +904,13 @@
       ]
     },
     {
+      "clearValueIfBlank": false,
       "field": "targetAgeGroup",
       "header": "Age Group",
       "subfieldPath": []
     },
     {
-      "field": "gmc_overrideTax",
-      "header": "Tax Google Location ID",
-      "subfieldPath": [
-        {
-          "name": "taxLocationID"
-        }
-      ]
-    },
-    {
-      "field": "shippingWeight",
-      "header": "Shipping Weight (Unit)",
-      "subfieldPath": [
-        {
-          "name": "unit"
-        }
-      ]
-    },
-    {
-      "field": "minimumEnergyEfficiencyClass",
-      "header": "Minimum Energy Efficiency Class",
-      "subfieldPath": []
-    },
-    {
+      "clearValueIfBlank": false,
       "field": "subscriptionPlan",
       "header": "Product Subscription Cost (Period Length)",
       "subfieldPath": [
@@ -1164,54 +920,19 @@
       ]
     },
     {
-      "field": "condition",
-      "header": "Condition",
-      "subfieldPath": []
-    },
-    {
+      "clearValueIfBlank": false,
       "field": "pattern",
       "header": "Pattern",
       "subfieldPath": []
     },
     {
+      "clearValueIfBlank": false,
       "field": "energyEfficiencyClass",
       "header": "Energy Efficiency Class",
       "subfieldPath": []
     },
     {
-      "field": "bundle",
-      "header": "Bundle",
-      "subfieldPath": []
-    },
-    {
-      "field": "subscriptionPlan",
-      "header": "Product Subscription Cost (Period)",
-      "subfieldPath": [
-        {
-          "name": "period"
-        }
-      ]
-    },
-    {
-      "field": "gmc_identifierExists",
-      "header": "Identifier Exists",
-      "subfieldPath": []
-    },
-    {
-      "field": "unitPricingMeasure",
-      "header": "Unit Pricing Measure (Unit)",
-      "subfieldPath": [
-        {
-          "name": "unit"
-        }
-      ]
-    },
-    {
-      "field": "material",
-      "header": "Material",
-      "subfieldPath": []
-    },
-    {
+      "clearValueIfBlank": false,
       "field": "gmc_displayAds",
       "header": "Display Ads Value",
       "subfieldPath": [
@@ -1221,6 +942,7 @@
       ]
     },
     {
+      "clearValueIfBlank": false,
       "field": "loyaltyPoints",
       "header": "Loyalty Points (Name)",
       "subfieldPath": [
@@ -1230,6 +952,7 @@
       ]
     },
     {
+      "clearValueIfBlank": false,
       "field": "photoGallery",
       "header": "Additional Image Links",
       "subfieldPath": [
@@ -1242,33 +965,7 @@
       ]
     },
     {
-      "field": "gmc_shippingOverride",
-      "header": "Shipping Country",
-      "subfieldPath": [
-        {
-          "name": "country"
-        }
-      ]
-    },
-    {
-      "field": "shippingWidth",
-      "header": "Shipping Width (Unit)",
-      "subfieldPath": [
-        {
-          "name": "unit"
-        }
-      ]
-    },
-    {
-      "field": "gmc_shippingOverride",
-      "header": "Shipping Region",
-      "subfieldPath": [
-        {
-          "name": "region"
-        }
-      ]
-    },
-    {
+      "clearValueIfBlank": false,
       "field": "sizeType",
       "header": "Size Type",
       "subfieldPath": [
@@ -1278,47 +975,13 @@
       ]
     },
     {
-      "field": "subscriptionPlan",
-      "header": "Product Subscription Cost (Currency)",
-      "subfieldPath": [
-        {
-          "name": "price"
-        },
-        {
-          "name": "currencyCode"
-        }
-      ]
-    },
-    {
-      "field": "gtin",
-      "header": "GTIN",
-      "subfieldPath": []
-    },
-    {
-      "field": "installmentPlan",
-      "header": "Installment Plan (Period Length)",
-      "subfieldPath": [
-        {
-          "name": "period"
-        }
-      ]
-    },
-    {
+      "clearValueIfBlank": false,
       "field": "sku",
       "header": "Offer ID",
       "subfieldPath": []
     },
     {
-      "field": "availabilityDate",
-      "header": "Availability Date",
-      "subfieldPath": []
-    },
-    {
-      "field": "gmc_googleProductCategory",
-      "header": "Google Product Category",
-      "subfieldPath": []
-    },
-    {
+      "clearValueIfBlank": false,
       "field": "shippingHeight",
       "header": "Shipping Height (Value)",
       "subfieldPath": [
@@ -1328,13 +991,228 @@
       ]
     },
     {
-      "field": "gmc_targetCountry",
-      "header": "Target Country",
+      "clearValueIfBlank": false,
+      "field": "price",
+      "header": "Price (Value)",
+      "subfieldPath": [
+        {
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "gmc_overrideTax",
+      "header": "Tax Country",
+      "subfieldPath": [
+        {
+          "name": "taxCountry"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "gmc_shoppingAdsLabels",
+      "header": "Custom Labels",
       "subfieldPath": []
     },
     {
-      "field": "price",
-      "header": "Price (Currency)",
+      "clearValueIfBlank": false,
+      "field": "gmc_shippingOverride",
+      "header": "Shipping Min Transit Time",
+      "subfieldPath": [
+        {
+          "name": "minimumTransitTime"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "shippingWeight",
+      "header": "Shipping Weight (Value)",
+      "subfieldPath": [
+        {
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "name",
+      "header": "Name",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "installmentPlan",
+      "header": "Installment Plan (Number of Periods)",
+      "subfieldPath": [
+        {
+          "name": "numberOfPeriods"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "includesAdultContent",
+      "header": "Adult Content",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "unitPricingBaseMeasure",
+      "header": "Unit Pricing Base Measure (Value)",
+      "subfieldPath": [
+        {
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "primaryPhoto",
+      "header": "Image Link",
+      "subfieldPath": [
+        {
+          "name": "image"
+        },
+        {
+          "name": "url"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "loyaltyPoints",
+      "header": "Loyalty Points (Value)",
+      "subfieldPath": [
+        {
+          "name": "numberOfPoints"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "gmc_adsRedirectURL",
+      "header": "Ads Redirect URL",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "gmc_shippingLabel",
+      "header": "Shipping Label",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "gmc_shippingOverride",
+      "header": "Shipping Max Handling Time",
+      "subfieldPath": [
+        {
+          "name": "maximumHandlingTime"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "color",
+      "header": "Color ",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "gmc_includedDestinations",
+      "header": "Included Destinations",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "stockStatus",
+      "header": "Availability",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "shippingHeight",
+      "header": "Shipping Height (Unit)",
+      "subfieldPath": [
+        {
+          "name": "unit"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "gmc_displayAds",
+      "header": "Display Ads Link",
+      "subfieldPath": [
+        {
+          "name": "displayAdsLink"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "gmc_channel",
+      "header": "Channel",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "shippingLength",
+      "header": "Shipping Length (Unit)",
+      "subfieldPath": [
+        {
+          "name": "unit"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "gmc_displayAds",
+      "header": "Display Ads ID",
+      "subfieldPath": [
+        {
+          "name": "displayAdsID"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "gmc_pickupMethodOption",
+      "header": "Pickup Method",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "sales",
+      "header": "Sale Price Start Date (raw)",
+      "subfieldPath": [
+        {
+          "name": "saleStartDate"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "sales",
+      "header": "Sale Price End Date (raw)",
+      "subfieldPath": [
+        {
+          "name": "saleEndDate"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "brand",
+      "header": "Brand",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "productionCost",
+      "header": "Cost of Goods Sold (Currency)",
       "subfieldPath": [
         {
           "name": "currencyCode"
@@ -1342,18 +1220,81 @@
       ]
     },
     {
+      "clearValueIfBlank": false,
       "field": "gmc_shippingOverride",
-      "header": "Shipping Price Currency",
+      "header": "Shipping Postal Code",
       "subfieldPath": [
         {
-          "name": "price2"
-        },
-        {
-          "name": "currency"
+          "name": "postalCode"
         }
       ]
     },
     {
+      "clearValueIfBlank": false,
+      "field": "size",
+      "header": "Sizes",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "gmc_shippingOverride",
+      "header": "Shipping Service",
+      "subfieldPath": [
+        {
+          "name": "service"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "gmc_canonicalLink",
+      "header": "Canonical Link",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "gmc_displayAds",
+      "header": "Display Ads Similar IDs",
+      "subfieldPath": [
+        {
+          "name": "displayAdsSimilarIDs"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "gmc_shoppingAdsExcludedCountries",
+      "header": "Shopping Ads Excluded Countries",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "gmc_overrideTax",
+      "header": "Tax Rate",
+      "subfieldPath": [
+        {
+          "name": "taxRate"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "expirationDate",
+      "header": "Expiration Date",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "gmc_shippingOverride",
+      "header": "Shipping Location ID",
+      "subfieldPath": [
+        {
+          "name": "locationID"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
       "field": "gmc_shippingOverride",
       "header": "Shipping Price Value",
       "subfieldPath": [
@@ -1366,6 +1307,30 @@
       ]
     },
     {
+      "clearValueIfBlank": false,
+      "field": "unitPricingMeasure",
+      "header": "Unit Pricing Measure (Value)",
+      "subfieldPath": [
+        {
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "gmc_shippingOverride",
+      "header": "Shipping Price Currency",
+      "subfieldPath": [
+        {
+          "name": "price2"
+        },
+        {
+          "name": "currency"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
       "field": "sales",
       "header": "Sale Price (value)",
       "subfieldPath": [
@@ -1378,6 +1343,17 @@
       ]
     },
     {
+      "clearValueIfBlank": false,
+      "field": "gmc_overrideTax",
+      "header": "Tax Google Location ID",
+      "subfieldPath": [
+        {
+          "name": "taxLocationID"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
       "field": "sales",
       "header": "Sale Price (currency)",
       "subfieldPath": [
@@ -1390,27 +1366,160 @@
       ]
     },
     {
-      "field": "size",
-      "header": "Sizes",
+      "clearValueIfBlank": false,
+      "field": "shippingWeight",
+      "header": "Shipping Weight (Unit)",
+      "subfieldPath": [
+        {
+          "name": "unit"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "minimumEnergyEfficiencyClass",
+      "header": "Minimum Energy Efficiency Class",
       "subfieldPath": []
     },
     {
-      "field": "sales",
-      "header": "Sale Price Start Date (raw)",
+      "clearValueIfBlank": false,
+      "field": "condition",
+      "header": "Condition",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "bundle",
+      "header": "Bundle",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "subscriptionPlan",
+      "header": "Product Subscription Cost (Period)",
       "subfieldPath": [
         {
-          "name": "saleStartDate"
+          "name": "period"
         }
       ]
     },
     {
-      "field": "sales",
-      "header": "Sale Price End Date (raw)",
+      "clearValueIfBlank": false,
+      "field": "gmc_identifierExists",
+      "header": "Identifier Exists",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "unitPricingMeasure",
+      "header": "Unit Pricing Measure (Unit)",
       "subfieldPath": [
         {
-          "name": "saleEndDate"
+          "name": "unit"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "material",
+      "header": "Material",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "gmc_shippingOverride",
+      "header": "Shipping Country",
+      "subfieldPath": [
+        {
+          "name": "country"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "shippingWidth",
+      "header": "Shipping Width (Unit)",
+      "subfieldPath": [
+        {
+          "name": "unit"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "gmc_shippingOverride",
+      "header": "Shipping Region",
+      "subfieldPath": [
+        {
+          "name": "region"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "subscriptionPlan",
+      "header": "Product Subscription Cost (Currency)",
+      "subfieldPath": [
+        {
+          "name": "price"
+        },
+        {
+          "name": "currencyCode"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "gtin",
+      "header": "GTIN",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "installmentPlan",
+      "header": "Installment Plan (Period Length)",
+      "subfieldPath": [
+        {
+          "name": "period"
+        }
+      ]
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "availabilityDate",
+      "header": "Availability Date",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "gmc_googleProductCategory",
+      "header": "Google Product Category",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "gmc_targetCountry",
+      "header": "Target Country",
+      "subfieldPath": []
+    },
+    {
+      "clearValueIfBlank": false,
+      "field": "price",
+      "header": "Price (Currency)",
+      "subfieldPath": [
+        {
+          "name": "currencyCode"
         }
       ]
     }
-  ]
+  ],
+  "scheduleConfig": {
+    "customSchedule": {
+      "timeZone": "America/New_York",
+      "startDate": "2023-03-08",
+      "startTime": "03:00",
+      "frequencyType": "HOURLY"
+    },
+    "runMode": "COMPREHENSIVE"
+  }
 }
