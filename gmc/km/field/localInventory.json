@@ -1,0 +1,14 @@
+{
+  "$id": "gmc2_localInventory",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "description": "",
+  "displayName": "Local Inventory",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "listType": {
+      "typeId": "gmc_localInventoryData"
+    }
+  },
+  "typeId": "list"
+}
