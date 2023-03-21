@@ -1,0 +1,29 @@
+{
+  "$id": "gmc2_product",
+  "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
+  "name": "Product",
+  "entityType": "product",
+  "fields": [
+    "gmc2_additionalSizeType",
+    "gmc2_adsRedirectURL",
+    "gmc2_canonicalLink",
+    "gmc2_channel",
+    "gmc2_displayAds",
+    "gmc2_excludedDestinations",
+    "gmc2_googleProductCategory",
+    "gmc2_identifierExists",
+    "gmc2_includedDestinations",
+    "gmc2_itemGroupID",
+    "gmc2_localInventory",
+    "gmc2_overrideTax",
+    "gmc2_pickupMethodOption",
+    "gmc2_shippingLabel",
+    "gmc2_shippingOverride",
+    "gmc2_shoppingAdsExcludedCountries",
+    "gmc2_shoppingAdsLabels",
+    "gmc2_targetCountry",
+    "gmc2_taxCategoryLabel",
+    "gmc2_transitTimeLabel"
+  ],
+  "required": []
+}

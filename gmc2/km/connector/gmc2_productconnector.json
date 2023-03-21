@@ -1,0 +1,1425 @@
+{
+  "$id": "gmc2_productConnector",
+  "$schema": "https://schema.yext.com/config/km/connector/v3",
+  "displayName": "Google Merchant Center Product Connector",
+  "entityType": "product",
+  "source": {
+    "sourceConfig": {
+      "nativeSourceConfig": {
+        "source": "gmc",
+        "operation": "fetchProducts",
+        "inputs": {
+          "googleLinkedAccount": "${{googleLinkedAccount}}",
+          "merchantId": "${{merchantId}}"
+        }
+      }
+    },
+       "selectors": [
+        {
+          "type": "JSON",
+          "header": "Entity ID",
+          "path": "id"
+        },
+        {
+          "type": "JSON",
+          "header": "Name",
+          "path": "title"
+        },
+        {
+          "type": "JSON",
+          "header": "Description",
+          "path": "description"
+        },
+        {
+          "type": "JSON",
+          "header": "Availability",
+          "path": "availability"
+        },
+        {
+          "type": "JSON",
+          "header": "Price (Value)",
+          "path": "price.value"
+        },
+        {
+          "type": "JSON",
+          "header": "Price (Currency)",
+          "path": "price.currency"
+        },
+        {
+          "type": "JSON",
+          "header": "Offer ID",
+          "path": "offerId"
+        },
+        {
+          "type": "JSON",
+          "header": "Color ",
+          "path": "color"
+        },
+        {
+          "type": "JSON",
+          "header": "GTIN",
+          "path": "gtin"
+        },
+        {
+          "type": "JSON",
+          "header": "Item Group ID",
+          "path": "itemGroupId"
+        },
+        {
+          "type": "JSON",
+          "header": "Link",
+          "path": "link"
+        },
+        {
+          "type": "JSON",
+          "header": "Brand",
+          "path": "brand"
+        },
+        {
+          "type": "JSON",
+          "header": "MPN",
+          "path": "mpn"
+        },
+        {
+          "type": "JSON",
+          "header": "Availability Date",
+          "path": "availabilityDate"
+        },
+        {
+          "type": "JSON",
+          "header": "Condition",
+          "path": "condition"
+        },
+        {
+          "type": "JSON",
+          "header": "Adult Content",
+          "path": "adult"
+        },
+        {
+          "type": "JSON",
+          "header": "Product Highlights",
+          "path": "productHighlights"
+        },
+        {
+          "type": "JSON",
+          "header": "Expiration Date",
+          "path": "expirationDate"
+        },
+        {
+          "type": "JSON",
+          "header": "Unit Pricing Measure (Value)",
+          "path": "unitPricingMeasure.value"
+        },
+        {
+          "type": "JSON",
+          "header": "Unit Pricing Base Measure (Value)",
+          "path": "unitPricingBaseMeasure.value"
+        },
+        {
+          "type": "JSON",
+          "header": "Bundle",
+          "path": "isBundle"
+        },
+        {
+          "type": "JSON",
+          "header": "Product Subscription Cost (Period)",
+          "path": "subscriptionCost.period"
+        },
+        {
+          "type": "JSON",
+          "header": "Unit Pricing Measure (Unit)",
+          "path": "unitPricingMeasure.unit"
+        },
+        {
+          "type": "JSON",
+          "header": "Unit Pricing Base Measure (Unit)",
+          "path": "unitPricingBaseMeasure.unit"
+        },
+        {
+          "type": "JSON",
+          "header": "Loyalty Points (Name)",
+          "path": "loyaltyPoints.name"
+        },
+        {
+          "type": "JSON",
+          "header": "Loyalty Points (Value)",
+          "path": "loyaltyPoints.pointsValue"
+        },
+        {
+          "type": "JSON",
+          "header": "Loyalty Points (Ratio)",
+          "path": "loyaltyPoints.ratio"
+        },
+        {
+          "type": "JSON",
+          "header": "Shipping Weight (Value)",
+          "path": "shippingWeight.value"
+        },
+        {
+          "type": "JSON",
+          "header": "Shipping Weight (Unit)",
+          "path": "shippingWeight.unit"
+        },
+        {
+          "type": "JSON",
+          "header": "Cost of Goods Sold (Value)",
+          "path": "costOfGoodsSold.value"
+        },
+        {
+          "type": "JSON",
+          "header": "Cost of Goods Sold (Currency)",
+          "path": "costOfGoodsSold.currency"
+        },
+        {
+          "type": "JSON",
+          "header": "Shipping Length (Value)",
+          "path": "shippingLength.value"
+        },
+        {
+          "type": "JSON",
+          "header": "Shipping Length (Unit)",
+          "path": "shippingLength.unit"
+        },
+        {
+          "type": "JSON",
+          "header": "Shipping Width (Value)",
+          "path": "shippingWidth.value"
+        },
+        {
+          "type": "JSON",
+          "header": "Shipping Width (Unit)",
+          "path": "shippingWidth.unit"
+        },
+        {
+          "type": "JSON",
+          "header": "Shipping Height (Value)",
+          "path": "shippingHeight.value"
+        },
+        {
+          "type": "JSON",
+          "header": "Shipping Height (Unit)",
+          "path": "shippingHeight.unit"
+        },
+        {
+          "type": "JSON",
+          "header": "Mobile Link",
+          "path": "mobileLink"
+        },
+        {
+          "type": "JSON",
+          "header": "Size Type",
+          "path": "sizeType"
+        },
+        {
+          "type": "JSON",
+          "header": "Size System",
+          "path": "sizeSystem"
+        },
+        {
+          "type": "JSON",
+          "header": "Image Link",
+          "path": "imageLink"
+        },
+        {
+          "type": "JSON",
+          "header": "Additional Image Links",
+          "path": "additionalImageLinks[*]"
+        },
+        {
+          "type": "JSON",
+          "header": "Energy Efficiency Class",
+          "path": "energyEfficiencyClass"
+        },
+        {
+          "type": "JSON",
+          "header": "Minimum Energy Efficiency Class",
+          "path": "minEnergyEfficiencyClass"
+        },
+        {
+          "type": "JSON",
+          "header": "Maximum Energy Efficiency Class",
+          "path": "maxEnergyEfficiencyClass"
+        },
+        {
+          "type": "JSON",
+          "header": "Multipack",
+          "path": "multipack"
+        },
+        {
+          "type": "JSON",
+          "header": "Additional Size Type",
+          "path": "additionalSizeType"
+        },
+        {
+          "type": "JSON",
+          "header": "Ads Redirect URL",
+          "path": "adsRedirect"
+        },
+        {
+          "type": "JSON",
+          "header": "Canonical Link",
+          "path": "canonicalLink"
+        },
+        {
+          "type": "JSON",
+          "header": "Display Ads ID",
+          "path": "displayAdsId"
+        },
+        {
+          "type": "JSON",
+          "header": "Display Ads Link",
+          "path": "displayAdsLink"
+        },
+        {
+          "type": "JSON",
+          "header": "Display Ads Similar IDs",
+          "path": "displayAdsSimilarIds[]"
+        },
+        {
+          "type": "JSON",
+          "header": "Display Ads Title",
+          "path": "displayAdsTitle"
+        },
+        {
+          "type": "JSON",
+          "header": "Display Ads Value",
+          "path": "displayAdsValue"
+        },
+        {
+          "type": "JSON",
+          "header": "Excluded Destinations",
+          "path": "excludedDestinations"
+        },
+        {
+          "type": "JSON",
+          "header": "Shopping Ads Excluded Countries",
+          "path": "shoppingAdsExcludedCountries"
+        },
+        {
+          "type": "JSON",
+          "header": "Google Product Category",
+          "path": "googleProductCategory"
+        },
+        {
+          "type": "JSON",
+          "header": "Identifier Exists",
+          "path": "identifierExists"
+        },
+        {
+          "type": "JSON",
+          "header": "Included Destinations",
+          "path": "includedDestinations"
+        },
+        {
+          "type": "JSON",
+          "header": "Shipping Label",
+          "path": "shippingLabel"
+        },
+        {
+          "type": "JSON",
+          "header": "Shipping Country",
+          "path": "shipping[*].country"
+        },
+        {
+          "type": "JSON",
+          "header": "Shipping Location Group Name",
+          "path": "shipping[*].locationGroupName"
+        },
+        {
+          "type": "JSON",
+          "header": "Shipping Location ID",
+          "path": "shipping[*].locationId"
+        },
+        {
+          "type": "JSON",
+          "header": "Shipping Max Handling Time",
+          "path": "shipping[*].maxHandlingTime"
+        },
+        {
+          "type": "JSON",
+          "header": "Shipping Min Handling Time",
+          "path": "shipping[*].minHandlingTime"
+        },
+        {
+          "type": "JSON",
+          "header": "Shipping Max Transit Time",
+          "path": "shipping[*].maxTransitTime"
+        },
+        {
+          "type": "JSON",
+          "header": "Shipping Min Transit Time",
+          "path": "shipping[*].minTransitTime"
+        },
+        {
+          "type": "JSON",
+          "header": "Shipping Postal Code",
+          "path": "shipping[*].postalCode"
+        },
+        {
+          "type": "JSON",
+          "header": "Shipping Price Currency",
+          "path": "shipping[*].price.currency"
+        },
+        {
+          "type": "JSON",
+          "header": "Shipping Price Value",
+          "path": "shipping[*].price.value"
+        },
+        {
+          "type": "JSON",
+          "header": "Shipping Region",
+          "path": "shipping[*].region"
+        },
+        {
+          "type": "JSON",
+          "header": "Shipping Service",
+          "path": "shipping[*].service"
+        },
+        {
+          "type": "JSON",
+          "header": "Pickup Method",
+          "path": "pickupMethod"
+        },
+        {
+          "type": "JSON",
+          "header": "Shopping Ads Labels 0",
+          "path": "customLabel0"
+        },
+        {
+          "type": "JSON",
+          "header": "Shopping Ads Labels 1",
+          "path": "customLabel1"
+        },
+        {
+          "type": "JSON",
+          "header": "Shopping Ads Labels 2",
+          "path": "customLabel2"
+        },
+        {
+          "type": "JSON",
+          "header": "Shopping Ads Labels 3",
+          "path": "customLabel3"
+        },
+        {
+          "type": "JSON",
+          "header": "Shopping Ads Labels 4",
+          "path": "customLabel4"
+        },
+        {
+          "type": "JSON",
+          "header": "Target Country",
+          "path": "targetCountry"
+        },
+        {
+          "type": "JSON",
+          "header": "Tax Category Label",
+          "path": "taxCategory"
+        },
+        {
+          "type": "JSON",
+          "header": "Tax Country",
+          "path": "taxes[*].country"
+        },
+        {
+          "type": "JSON",
+          "header": "Tax Google Location ID",
+          "path": "taxes[*].locationId"
+        },
+        {
+          "type": "JSON",
+          "header": "Tax Postal Code",
+          "path": "taxes[*].postalCode"
+        },
+        {
+          "type": "JSON",
+          "header": "Tax Rate",
+          "path": "taxes[*].rate"
+        },
+        {
+          "type": "JSON",
+          "header": "Tax Region",
+          "path": "taxes[*].region"
+        },
+        {
+          "type": "JSON",
+          "header": "Tax Charged on Shipping",
+          "path": "taxes[*].taxShip"
+        },
+        {
+          "type": "JSON",
+          "header": "Transit Time Label",
+          "path": "transitTimeLabel"
+        },
+        {
+          "type": "JSON",
+          "header": "Product Subscription Cost (Period Length)",
+          "path": "subscriptionCost.periodLength"
+        },
+        {
+          "type": "JSON",
+          "header": "Product Subscription Cost (Value)",
+          "path": "subscriptionCost.amount.value"
+        },
+        {
+          "type": "JSON",
+          "header": "Product Subscription Cost (Currency)",
+          "path": "subscriptionCost.amount.currency"
+        },
+        {
+          "type": "JSON",
+          "header": "Channel",
+          "path": "channel"
+        },
+        {
+          "type": "JSON",
+          "header": "Age Group",
+          "path": "ageGroup"
+        },
+        {
+          "type": "JSON",
+          "header": "Gender ",
+          "path": "gender"
+        },
+        {
+          "type": "JSON",
+          "header": "Material",
+          "path": "material"
+        },
+        {
+          "type": "JSON",
+          "header": "Pattern",
+          "path": "pattern"
+        },
+        {
+          "type": "JSON",
+          "header": "Installment Plan (Number of Periods)",
+          "path": "installment.months"
+        },
+        {
+          "type": "JSON",
+          "header": "Installment Plan (Period Length)",
+          "path": "installment.months"
+        },
+        {
+          "type": "JSON",
+          "header": "Installment Plan (Value)",
+          "path": "installment.amount.value"
+        },
+        {
+          "type": "JSON",
+          "header": "Installment Plan (Currency)",
+          "path": "installment.amount.currency"
+        },
+        {
+          "type": "JSON",
+          "header": "Sale Price (value)",
+          "path": "salePrice.value"
+        },
+        {
+          "type": "JSON",
+          "header": "Sale Price (currency)",
+          "path": "salePrice.currency"
+        },
+        {
+          "type": "JSON",
+          "header": "Sizes",
+          "path": "sizes"
+        },
+        {
+          "type": "JSON",
+          "header": "Sale Price Date (raw)",
+          "path": "salePriceEffectiveDate"
+        }
+      ]
+    },
+    "transforms": [
+      {
+        "function": {
+          "inputHeaders": {
+            "headers": [
+              "Availability"
+            ]
+          },
+          "plugin": "gmc2_convertStockStatus",
+          "function": "convertStockStatus"
+        }
+      },
+      {
+        "formatDates": {
+          "inputHeaders": {
+            "headers": [
+              "Availability Date",
+              "Expiration Date"
+            ]
+          },
+          "inputFormat": "yyyy-MM-dd\u0027T\u0027kk:mm:ssX"
+        }
+      },
+      {
+        "mergeColumns": {
+          "inputHeaders": [
+            "Shopping Ads Labels 0",
+            "Shopping Ads Labels 1",
+            "Shopping Ads Labels 2",
+            "Shopping Ads Labels 3",
+            "Shopping Ads Labels 4"
+          ],
+          "newColumnHeader": "Custom Labels",
+          "delimiter": ","
+        }
+      },
+      {
+        "function": {
+          "inputHeaders": {
+            "headers": [
+              "Installment Plan (Period Length)"
+            ]
+          },
+          "plugin": "gmc2_determineInstallmentPlanLength",
+          "function": "determineInstallmentPlanLength"
+        }
+      },
+      {
+        "findAndReplace": {
+          "inputHeaders": {
+            "headers": [
+              "Energy Efficiency Class",
+              "Minimum Energy Efficiency Class",
+              "Maximum Energy Efficiency Class"
+            ]
+          },
+          "valueToFind": {
+            "plainText": {
+              "value": "+",
+              "ignoreCase": false
+            }
+          },
+          "replacement": "_PLUS"
+        }
+      },
+      {
+        "extractText": {
+          "inputHeader": "Sale Price Date (raw)",
+          "newColumnHeader": "Sale Price Start Date (raw)",
+          "extractOperation": "ALL_TEXT_BEFORE",
+          "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+          "valueToFind": {
+            "plainText": {
+              "value": "T",
+              "ignoreCase": false
+            }
+          }
+        }
+      },
+      {
+        "extractText": {
+          "inputHeader": "Sale Price Date (raw)",
+          "newColumnHeader": "Sale Price End Date (raw)",
+          "extractOperation": "SOME_TEXT_AFTER",
+          "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+          "valueToFind": {
+            "plainText": {
+              "value": "/",
+              "ignoreCase": false
+            }
+          },
+          "maxLengthTextToKeep": 10
+        }
+      },
+      {
+        "fixCapitalization": {
+          "inputHeaders": {
+            "headers": [
+              "Pickup Method"
+            ]
+          },
+          "cleanOption": "ALL_CAPS"
+        }
+      },
+      {
+        "findAndReplace": {
+          "inputHeaders": {
+            "headers": [
+              "Pickup Method"
+            ]
+          },
+          "valueToFind": {
+            "plainText": {
+              "value": " ",
+              "ignoreCase": false
+            }
+          },
+          "replacement": "_"
+        }
+      }
+    ],
+    "mappings": [
+      {
+        "field": "price",
+        "header": "Price (Value)",
+        "subfieldPath": [
+          {
+            "name": "value"
+          }
+        ]
+      },
+      {
+        "field": "gmc2_overrideTax",
+        "header": "Tax Country",
+        "subfieldPath": [
+          {
+            "name": "taxCountry"
+          }
+        ]
+      },
+      {
+        "field": "gmc2_shoppingAdsLabels",
+        "header": "Custom Labels",
+        "subfieldPath": []
+      },
+      {
+        "field": "mpn",
+        "header": "MPN",
+        "subfieldPath": []
+      },
+      {
+        "field": "gmc2_shippingOverride",
+        "header": "Shipping Min Transit Time",
+        "subfieldPath": [
+          {
+            "name": "minimumTransitTime"
+          }
+        ]
+      },
+      {
+        "field": "shippingWeight",
+        "header": "Shipping Weight (Value)",
+        "subfieldPath": [
+          {
+            "name": "value"
+          }
+        ]
+      },
+      {
+        "field": "maximumEnergyEfficiencyClass",
+        "header": "Maximum Energy Efficiency Class",
+        "subfieldPath": []
+      },
+      {
+        "field": "name",
+        "header": "Name",
+        "subfieldPath": []
+      },
+      {
+        "field": "installmentPlan",
+        "header": "Installment Plan (Number of Periods)",
+        "subfieldPath": [
+          {
+            "name": "numberOfPeriods"
+          }
+        ]
+      },
+      {
+        "field": "includesAdultContent",
+        "header": "Adult Content",
+        "subfieldPath": []
+      },
+      {
+        "field": "unitPricingBaseMeasure",
+        "header": "Unit Pricing Base Measure (Value)",
+        "subfieldPath": [
+          {
+            "name": "value"
+          }
+        ]
+      },
+      {
+        "field": "entityId",
+        "header": "Entity ID",
+        "subfieldPath": []
+      },
+      {
+        "field": "gmc2_shippingOverride",
+        "header": "Shipping Max Transit Time",
+        "subfieldPath": [
+          {
+            "name": "maximumTransitTime"
+          }
+        ]
+      },
+      {
+        "field": "primaryPhoto",
+        "header": "Image Link",
+        "subfieldPath": [
+          {
+            "name": "image"
+          },
+          {
+            "name": "url"
+          }
+        ]
+      },
+      {
+        "field": "loyaltyPoints",
+        "header": "Loyalty Points (Value)",
+        "subfieldPath": [
+          {
+            "name": "numberOfPoints"
+          }
+        ]
+      },
+      {
+        "field": "gmc2_adsRedirectURL",
+        "header": "Ads Redirect URL",
+        "subfieldPath": []
+      },
+      {
+        "field": "gmc2_shippingLabel",
+        "header": "Shipping Label",
+        "subfieldPath": []
+      },
+      {
+        "field": "installmentPlan",
+        "header": "Installment Plan (Currency)",
+        "subfieldPath": [
+          {
+            "name": "price"
+          },
+          {
+            "name": "currencyCode"
+          }
+        ]
+      },
+      {
+        "field": "shippingWidth",
+        "header": "Shipping Width (Value)",
+        "subfieldPath": [
+          {
+            "name": "value"
+          }
+        ]
+      },
+      {
+        "field": "gmc2_shippingOverride",
+        "header": "Shipping Max Handling Time",
+        "subfieldPath": [
+          {
+            "name": "maximumHandlingTime"
+          }
+        ]
+      },
+      {
+        "field": "color",
+        "header": "Color ",
+        "subfieldPath": []
+      },
+      {
+        "field": "unitPricingBaseMeasure",
+        "header": "Unit Pricing Base Measure (Unit)",
+        "subfieldPath": [
+          {
+            "name": "unit"
+          }
+        ]
+      },
+      {
+        "field": "gmc2_includedDestinations",
+        "header": "Included Destinations",
+        "subfieldPath": []
+      },
+      {
+        "field": "stockStatus",
+        "header": "Availability",
+        "subfieldPath": []
+      },
+      {
+        "field": "gmc2_overrideTax",
+        "header": "Tax Postal Code",
+        "subfieldPath": [
+          {
+            "name": "taxPostalCode"
+          }
+        ]
+      },
+      {
+        "field": "shippingHeight",
+        "header": "Shipping Height (Unit)",
+        "subfieldPath": [
+          {
+            "name": "unit"
+          }
+        ]
+      },
+      {
+        "field": "gmc2_displayAds",
+        "header": "Display Ads Link",
+        "subfieldPath": [
+          {
+            "name": "displayAdsLink"
+          }
+        ]
+      },
+      {
+        "field": "gmc2_channel",
+        "header": "Channel",
+        "subfieldPath": []
+      },
+      {
+        "field": "shippingLength",
+        "header": "Shipping Length (Unit)",
+        "subfieldPath": [
+          {
+            "name": "unit"
+          }
+        ]
+      },
+      {
+        "field": "mobileOptimizedLandingPage",
+        "header": "Mobile Link",
+        "subfieldPath": []
+      },
+      {
+        "field": "gmc2_displayAds",
+        "header": "Display Ads ID",
+        "subfieldPath": [
+          {
+            "name": "displayAdsID"
+          }
+        ]
+      },
+      {
+        "field": "gmc2_pickupMethodOption",
+        "header": "Pickup Method",
+        "subfieldPath": []
+      },
+      {
+        "field": "sizeSystem",
+        "header": "Size System",
+        "subfieldPath": []
+      },
+      {
+        "field": "targetGender",
+        "header": "Gender ",
+        "subfieldPath": []
+      },
+      {
+        "field": "brand",
+        "header": "Brand",
+        "subfieldPath": []
+      },
+      {
+        "field": "productionCost",
+        "header": "Cost of Goods Sold (Currency)",
+        "subfieldPath": [
+          {
+            "name": "currencyCode"
+          }
+        ]
+      },
+      {
+        "field": "gmc2_shippingOverride",
+        "header": "Shipping Postal Code",
+        "subfieldPath": [
+          {
+            "name": "postalCode"
+          }
+        ]
+      },
+      {
+        "field": "gmc2_transitTimeLabel",
+        "header": "Transit Time Label",
+        "subfieldPath": []
+      },
+      {
+        "field": "gmc2_shippingOverride",
+        "header": "Shipping Service",
+        "subfieldPath": [
+          {
+            "name": "service"
+          }
+        ]
+      },
+      {
+        "field": "gmc2_canonicalLink",
+        "header": "Canonical Link",
+        "subfieldPath": []
+      },
+      {
+        "field": "loyaltyPoints",
+        "header": "Loyalty Points (Ratio)",
+        "subfieldPath": [
+          {
+            "name": "ratioToCurrency"
+          }
+        ]
+      },
+      {
+        "field": "gmc2_shippingOverride",
+        "header": "Shipping Min Handling Time",
+        "subfieldPath": [
+          {
+            "name": "minimumHandlingTime"
+          }
+        ]
+      },
+      {
+        "field": "gmc2_displayAds",
+        "header": "Display Ads Similar IDs",
+        "subfieldPath": [
+          {
+            "name": "displayAdsSimilarIDs"
+          }
+        ]
+      },
+      {
+        "field": "gmc2_itemGroupID",
+        "header": "Item Group ID",
+        "subfieldPath": []
+      },
+      {
+        "field": "gmc2_shoppingAdsExcludedCountries",
+        "header": "Shopping Ads Excluded Countries",
+        "subfieldPath": []
+      },
+      {
+        "field": "gmc2_overrideTax",
+        "header": "Tax Rate",
+        "subfieldPath": [
+          {
+            "name": "taxRate"
+          }
+        ]
+      },
+      {
+        "field": "productHighlights",
+        "header": "Product Highlights",
+        "subfieldPath": []
+      },
+      {
+        "field": "numberOfItemsInPack",
+        "header": "Multipack",
+        "subfieldPath": []
+      },
+      {
+        "field": "gmc2_taxCategoryLabel",
+        "header": "Tax Category Label",
+        "subfieldPath": []
+      },
+      {
+        "field": "gmc2_additionalSizeType",
+        "header": "Additional Size Type",
+        "subfieldPath": []
+      },
+      {
+        "field": "gmc2_displayAds",
+        "header": "Display Ads Title",
+        "subfieldPath": [
+          {
+            "name": "displayAdsTitle"
+          }
+        ]
+      },
+      {
+        "field": "landingPageUrl",
+        "header": "Link",
+        "subfieldPath": []
+      },
+      {
+        "field": "gmc2_excludedDestinations",
+        "header": "Excluded Destinations",
+        "subfieldPath": []
+      },
+      {
+        "field": "installmentPlan",
+        "header": "Installment Plan (Value)",
+        "subfieldPath": [
+          {
+            "name": "price"
+          },
+          {
+            "name": "value"
+          }
+        ]
+      },
+      {
+        "field": "expirationDate",
+        "header": "Expiration Date",
+        "subfieldPath": []
+      },
+      {
+        "field": "gmc2_shippingOverride",
+        "header": "Shipping Location ID",
+        "subfieldPath": [
+          {
+            "name": "locationID"
+          }
+        ]
+      },
+      {
+        "field": "gmc2_overrideTax",
+        "header": "Tax Region",
+        "subfieldPath": [
+          {
+            "name": "taxRegion"
+          }
+        ]
+      },
+      {
+        "field": "richTextDescription",
+        "header": "Description",
+        "subfieldPath": []
+      },
+      {
+        "field": "gmc2_shippingOverride",
+        "header": "Shipping Location Group Name",
+        "subfieldPath": [
+          {
+            "name": "locationGroupName"
+          }
+        ]
+      },
+      {
+        "field": "unitPricingMeasure",
+        "header": "Unit Pricing Measure (Value)",
+        "subfieldPath": [
+          {
+            "name": "value"
+          }
+        ]
+      },
+      {
+        "field": "subscriptionPlan",
+        "header": "Product Subscription Cost (Value)",
+        "subfieldPath": [
+          {
+            "name": "price"
+          },
+          {
+            "name": "value"
+          }
+        ]
+      },
+      {
+        "field": "productionCost",
+        "header": "Cost of Goods Sold (Value)",
+        "subfieldPath": [
+          {
+            "name": "value"
+          }
+        ]
+      },
+      {
+        "field": "shippingLength",
+        "header": "Shipping Length (Value)",
+        "subfieldPath": [
+          {
+            "name": "value"
+          }
+        ]
+      },
+      {
+        "field": "gmc2_overrideTax",
+        "header": "Tax Charged on Shipping",
+        "subfieldPath": [
+          {
+            "name": "taxShipping"
+          }
+        ]
+      },
+      {
+        "field": "targetAgeGroup",
+        "header": "Age Group",
+        "subfieldPath": []
+      },
+      {
+        "field": "gmc2_overrideTax",
+        "header": "Tax Google Location ID",
+        "subfieldPath": [
+          {
+            "name": "taxLocationID"
+          }
+        ]
+      },
+      {
+        "field": "shippingWeight",
+        "header": "Shipping Weight (Unit)",
+        "subfieldPath": [
+          {
+            "name": "unit"
+          }
+        ]
+      },
+      {
+        "field": "minimumEnergyEfficiencyClass",
+        "header": "Minimum Energy Efficiency Class",
+        "subfieldPath": []
+      },
+      {
+        "field": "subscriptionPlan",
+        "header": "Product Subscription Cost (Period Length)",
+        "subfieldPath": [
+          {
+            "name": "numberOfPeriods"
+          }
+        ]
+      },
+      {
+        "field": "condition",
+        "header": "Condition",
+        "subfieldPath": []
+      },
+      {
+        "field": "pattern",
+        "header": "Pattern",
+        "subfieldPath": []
+      },
+      {
+        "field": "energyEfficiencyClass",
+        "header": "Energy Efficiency Class",
+        "subfieldPath": []
+      },
+      {
+        "field": "bundle",
+        "header": "Bundle",
+        "subfieldPath": []
+      },
+      {
+        "field": "subscriptionPlan",
+        "header": "Product Subscription Cost (Period)",
+        "subfieldPath": [
+          {
+            "name": "period"
+          }
+        ]
+      },
+      {
+        "field": "gmc2_identifierExists",
+        "header": "Identifier Exists",
+        "subfieldPath": []
+      },
+      {
+        "field": "unitPricingMeasure",
+        "header": "Unit Pricing Measure (Unit)",
+        "subfieldPath": [
+          {
+            "name": "unit"
+          }
+        ]
+      },
+      {
+        "field": "material",
+        "header": "Material",
+        "subfieldPath": []
+      },
+      {
+        "field": "gmc2_displayAds",
+        "header": "Display Ads Value",
+        "subfieldPath": [
+          {
+            "name": "displayAdsValue"
+          }
+        ]
+      },
+      {
+        "field": "loyaltyPoints",
+        "header": "Loyalty Points (Name)",
+        "subfieldPath": [
+          {
+            "name": "loyaltyProgramName"
+          }
+        ]
+      },
+      {
+        "field": "photoGallery",
+        "header": "Additional Image Links",
+        "subfieldPath": [
+          {
+            "name": "image"
+          },
+          {
+            "name": "url"
+          }
+        ]
+      },
+      {
+        "field": "gmc2_shippingOverride",
+        "header": "Shipping Country",
+        "subfieldPath": [
+          {
+            "name": "country"
+          }
+        ]
+      },
+      {
+        "field": "shippingWidth",
+        "header": "Shipping Width (Unit)",
+        "subfieldPath": [
+          {
+            "name": "unit"
+          }
+        ]
+      },
+      {
+        "field": "gmc2_shippingOverride",
+        "header": "Shipping Region",
+        "subfieldPath": [
+          {
+            "name": "region"
+          }
+        ]
+      },
+      {
+        "field": "sizeType",
+        "header": "Size Type",
+        "subfieldPath": [
+          {
+            "index": 0
+          }
+        ]
+      },
+      {
+        "field": "subscriptionPlan",
+        "header": "Product Subscription Cost (Currency)",
+        "subfieldPath": [
+          {
+            "name": "price"
+          },
+          {
+            "name": "currencyCode"
+          }
+        ]
+      },
+      {
+        "field": "gtin",
+        "header": "GTIN",
+        "subfieldPath": []
+      },
+      {
+        "field": "installmentPlan",
+        "header": "Installment Plan (Period Length)",
+        "subfieldPath": [
+          {
+            "name": "period"
+          }
+        ]
+      },
+      {
+        "field": "sku",
+        "header": "Offer ID",
+        "subfieldPath": []
+      },
+      {
+        "field": "availabilityDate",
+        "header": "Availability Date",
+        "subfieldPath": []
+      },
+      {
+        "field": "gmc2_googleProductCategory",
+        "header": "Google Product Category",
+        "subfieldPath": []
+      },
+      {
+        "field": "shippingHeight",
+        "header": "Shipping Height (Value)",
+        "subfieldPath": [
+          {
+            "name": "value"
+          }
+        ]
+      },
+      {
+        "field": "gmc2_targetCountry",
+        "header": "Target Country",
+        "subfieldPath": []
+      },
+      {
+        "field": "price",
+        "header": "Price (Currency)",
+        "subfieldPath": [
+          {
+            "name": "currencyCode"
+          }
+        ]
+      },
+      {
+        "field": "gmc2_shippingOverride",
+        "header": "Shipping Price Currency",
+        "subfieldPath": [
+          {
+            "name": "price2"
+          },
+          {
+            "name": "currency"
+          }
+        ]
+      },
+      {
+        "field": "gmc2_shippingOverride",
+        "header": "Shipping Price Value",
+        "subfieldPath": [
+          {
+            "name": "price2"
+          },
+          {
+            "name": "value"
+          }
+        ]
+      },
+      {
+        "field": "sales",
+        "header": "Sale Price (value)",
+        "subfieldPath": [
+          {
+            "name": "salePrice"
+          },
+          {
+            "name": "value"
+          }
+        ]
+      },
+      {
+        "field": "sales",
+        "header": "Sale Price (currency)",
+        "subfieldPath": [
+          {
+            "name": "salePrice"
+          },
+          {
+            "name": "currencyCode"
+          }
+        ]
+      },
+      {
+        "field": "size",
+        "header": "Sizes",
+        "subfieldPath": []
+      },
+      {
+        "field": "sales",
+        "header": "Sale Price Start Date (raw)",
+        "subfieldPath": [
+          {
+            "name": "saleStartDate"
+          }
+        ]
+      },
+      {
+        "field": "sales",
+        "header": "Sale Price End Date (raw)",
+        "subfieldPath": [
+          {
+            "name": "saleEndDate"
+          }
+        ]
+      }
+    ],
+  "scheduleConfig": {
+    "customSchedule": {
+      "timeZone": "America/New_York",
+      "startDate": "2023-03-08",
+      "startTime": "03:00",
+      "frequencyType": "HOURLY"
+    },
+    "runMode": "COMPREHENSIVE"
+  }
+}
