@@ -1,0 +1,14 @@
+{
+  "$id": "gmc2_overrideTax",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "description": "",
+  "displayName": "Override Tax",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "listType": {
+      "typeId": "gmc2_taxInformation"
+    }
+  },
+  "typeId": "list"
+}

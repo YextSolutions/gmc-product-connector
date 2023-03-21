@@ -1,0 +1,183 @@
+{
+  "$id": "gmc2_localInventoryData",
+  "$schema": "https://schema.yext.com/config/km/field-type/v1",
+  "description": "",
+  "displayName": "Local Inventory Data",
+  "type": {
+    "structType": {
+      "property": [
+        {
+          "name": "googleStoreCode",
+          "displayName": "Google Store Code",
+          "isRequired": false,
+          "typeId": "string",
+          "type": {
+            "stringType": {
+              "stereotype": "SIMPLE",
+              "maxLength": 100000
+            }
+          }
+        },
+        {
+          "name": "price",
+          "displayName": "Price",
+          "isRequired": false,
+          "typeId": "gmc2_priceUpdated"
+        },
+        {
+          "name": "quantity",
+          "displayName": "Quantity",
+          "isRequired": false,
+          "typeId": "decimal",
+          "type": {
+            "decimalType": {}
+          }
+        },
+        {
+          "name": "salePrice",
+          "displayName": "Sale Price",
+          "isRequired": false,
+          "typeId": "gmc_priceUpdated"
+        },
+        {
+          "name": "salePriceStartDate",
+          "displayName": "Sale Price Start Date",
+          "isRequired": false,
+          "typeId": "date",
+          "type": {
+            "dateType": {}
+          }
+        },
+        {
+          "name": "salePriceEndDate",
+          "displayName": "Sale Price End Date",
+          "isRequired": false,
+          "typeId": "date",
+          "type": {
+            "dateType": {}
+          }
+        },
+        {
+          "name": "availability",
+          "displayName": "Availability",
+          "isRequired": false,
+          "typeId": "option",
+          "type": {
+            "optionType": {
+              "option": [
+                {
+                  "displayName": "in stock",
+                  "textValue": "in stock"
+                },
+                {
+                  "displayName": "out of stock",
+                  "textValue": "out of stock"
+                },
+                {
+                  "displayName": "limited availability",
+                  "textValue": "limited availability"
+                },
+                {
+                  "displayName": "on display to order",
+                  "textValue": "on display to order"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "pickupMethod",
+          "displayName": "Pickup Method",
+          "isRequired": false,
+          "typeId": "option",
+          "type": {
+            "optionType": {
+              "option": [
+                {
+                  "displayName": "buy",
+                  "textValue": "buy"
+                },
+                {
+                  "displayName": "reserve",
+                  "textValue": "reserve"
+                },
+                {
+                  "displayName": "ship to store",
+                  "textValue": "ship to store"
+                },
+                {
+                  "displayName": "not supported",
+                  "textValue": "not supported"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "pickupSLA",
+          "displayName": "Pickup SLA",
+          "isRequired": false,
+          "typeId": "option",
+          "type": {
+            "optionType": {
+              "option": [
+                {
+                  "displayName": "same day",
+                  "textValue": "same day"
+                },
+                {
+                  "displayName": "next day",
+                  "textValue": "next day"
+                },
+                {
+                  "displayName": "1-day",
+                  "textValue": "1-day"
+                },
+                {
+                  "displayName": "2-day",
+                  "textValue": "2-day"
+                },
+                {
+                  "displayName": "3-day",
+                  "textValue": "3-day"
+                },
+                {
+                  "displayName": "4-day",
+                  "textValue": "4-day"
+                },
+                {
+                  "displayName": "5-day",
+                  "textValue": "5-day"
+                },
+                {
+                  "displayName": "6-day",
+                  "textValue": "6-day"
+                },
+                {
+                  "displayName": "7-day",
+                  "textValue": "7-day"
+                },
+                {
+                  "displayName": "multi-week",
+                  "textValue": "multi-week"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "inStoreProductLocation",
+          "displayName": "In-Store Product Location",
+          "isRequired": false,
+          "typeId": "string",
+          "type": {
+            "stringType": {
+              "stereotype": "SIMPLE",
+              "maxLength": 100000
+            }
+          }
+        }
+      ]
+    }
+  }
+}

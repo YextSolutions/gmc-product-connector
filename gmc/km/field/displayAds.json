@@ -1,0 +1,9 @@
+{
+  "$id": "gmc2_displayAds",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "description": "",
+  "displayName": "Display Ads",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "typeId": "gmc2_displayAds"
+}

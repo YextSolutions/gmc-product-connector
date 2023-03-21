@@ -1,0 +1,28 @@
+{
+  "$id": "gmc2_channel",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "description": "",
+  "displayName": "Google Merchant Center Channel",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "listType": {
+      "typeId": "option",
+      "type": {
+        "optionType": {
+          "option": [
+            {
+              "displayName": "Online",
+              "textValue": "ONLINE"
+            },
+            {
+              "displayName": "Local",
+              "textValue": "LOCAL"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "typeId": "list"
+}

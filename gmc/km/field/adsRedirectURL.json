@@ -1,0 +1,14 @@
+{
+  "$id": "gmc2_adsRedirectURL",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "description": "",
+  "displayName": "Ads Redirect URL",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "stringType": {
+      "stereotype": "URL"
+    }
+  },
+  "typeId": "string"
+}
