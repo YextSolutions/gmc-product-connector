@@ -37,7 +37,7 @@
           "name": "salePrice",
           "displayName": "Sale Price",
           "isRequired": false,
-          "typeId": "gmc_priceUpdated"
+          "typeId": "gmc2_priceUpdated"
         },
         {
           "name": "salePriceStartDate",
